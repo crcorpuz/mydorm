@@ -1,0 +1,28 @@
+CREATE TABLE `dormer` (
+	`student_number` INT( 9 ) NOT NULL,
+
+	`first_name` VARCHAR( 50 ) NOT NULL,
+	`middle_name` VARCHAR( 50 ) NOT NULL,
+	`last_name` VARCHAR( 50 ) NOT NULL,
+
+	`year_level` INT( 1 ) NOT NULL,
+	`degree_program` VARCHAR( 50 ) NOT NULL,
+	`department` VARCHAR( 50 ) NOT NULL,
+	`college` VARCHAR( 50 ) NOT NULL,
+
+	`room_assignment` CHAR( 4 ) NOT NULL,
+	`email` VARCHAR( 50 ) NOT NULL,
+	`phone_number` CHAR( 11 ) NOT NULL,
+
+	`scholarship` VARCHAR( 50 ),
+	`stfap_bracket` VARCHAR( 2 ) NOT NULL,
+	`religion` VARCHAR( 50 ),
+
+	`birthday` DATE NOT NULL,
+	`birthplace` VARCHAR( 50 ) NOT NULL,
+
+	`permanent_add` VARCHAR( 100 ) NOT NULL,
+	`civil_status` VARCHAR( 50 ) NOT NULL,
+	`special_tag` VARCHAR( 7 )
+	PRIMARY KEY ( `student_number` )
+) ENGINE = InnoDB;
